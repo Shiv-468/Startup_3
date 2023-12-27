@@ -981,6 +981,50 @@ video {
   line-height: 500rem;
 }
 
+.tracking-\[\.25em\] {
+  letter-spacing: .25em;
+}
+
+.tracking-\[\] {
+  letter-spacing: ;
+}
+
+.tracking-\[-\] {
+  letter-spacing: -;
+}
+
+.tracking-\[-0\.\] {
+  letter-spacing: -0.;
+}
+
+.tracking-\[-0\.293\] {
+  letter-spacing: -0.293;
+}
+
+.tracking-\[-0\.293px\] {
+  letter-spacing: -0.293px;
+}
+
+.tracking-\[\.\] {
+  letter-spacing: .;
+}
+
+.tracking-\[\.25\] {
+  letter-spacing: .25;
+}
+
+.tracking-\[\.25px\] {
+  letter-spacing: .25px;
+}
+
+.tracking-\[0\.25px\] {
+  letter-spacing: 0.25px;
+}
+
+.tracking-\[-0\.25px\] {
+  letter-spacing: -0.25px;
+}
+
 .text-\[px\] {
   color: px;
 }
