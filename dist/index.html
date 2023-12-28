@@ -11,34 +11,48 @@
 <body>
     <section class="bg-[#2F1893]">
         <div class="container mx-auto min-h-[100vh] flex flex-col">
-            <div class="flex justify-between pt-[53px]">
+            <div class="flex justify-between pt-[53px] items-center">
                 <h1 class="text-[24px] text-[#FFF] font-bold tracking-[-0.293px] font-poppins">Startup 3</h1>
-                <ul class="flex items-center gap-[33px]">
+                <ul class="flex items-center gap-[33px] max-md:fixed  max-md:bg-[#2F1893] max-md:w-screen max-md:h-screen max-md:top-0 max-md:right-[-100%] max-md:flex-col max-md:justify-center menulist duration-400">
                     <li><a href="#" class="text-[18px] text-[#FFF] font-medium leading-[28px] font-sans">Subscribe</a></li>
                     <li><a href="#" class="text-[18px] text-[#FFF] font-medium leading-[28px] font-sans">Features</a></li>
                     <li><button
                             class="py-[7px] px-[18px] text-white rounded-[100px] bg-[#482BE7] text-[18px] font-medium leading-[26px] font-sans">Sign
                             Up</button></li>
                 </ul>
+                <div class="menuicon md:hidden block z-50">
+                    <span class="bar h-[3px] block bg-white w-[25px]"></span>
+                    <span class="bar  h-[3px] block  bg-white w-[25px] my-[6px]"></span>
+                    <span class=" bar h-[3px] block  bg-white w-[25px] my-[6px]"></span>
+                </div>
             </div>
+            
             <div class="flex grow flex-col justify-center items-center">
-                <p class="text-center text-[#FFF] text-[22px] max-w-[607px] font-medium leading-[32px] font-sans">The most
+                <p class="text-center text-[#FFF] text-[18px] sm:text-[22px] max-w-[607px] font-medium leading-[32px] font-sans">The most
                     important part of the Startup is the samples. The samples form a set of 25 usable pages you can use
                     as is or you can add new blocks from UI Kit.</p>
-                <div class="flex gap-[10px] mt-[73px]">
+                <div class="flex flex-col gap-[10px] mt-[40px] sm:mt-[73px] sm:flex-row">
                     <div
-                        class="py-[17px] px-[24px] border-[#5946A9] rounded-[100px] border-[2px] border-solid max-w-[350px] w-full">
+                        class="py-[10px] sm:py-[17px] px-[24px] border-[#5946A9] rounded-[100px] border-[2px] border-solid max-w-[350px] w-full">
                         <input type="email" placeholder="Your email" style="outline: none; border: none;"
                             class="bg-[#2F1893] font-medium text-[20px] text-[#5946A9] leading-[26px] font-sans">
                     </div>
                     <button
-                        class="py-[17px] px-[35px] text-white text-[20px] rounded-[100px] bg-[#25DAC5] font-semibold leading-[26px] tracking-[-0.25px] font-poppins">Send</button>
+                        class="py-[10px] sm:py-[17px] px-[35px] text-white text-[20px] rounded-[100px] bg-[#25DAC5] font-semibold leading-[26px] tracking-[-0.25px] font-poppins">Send</button>
                 </div>
-                <p class="mt-[32px] text-[#5946A9] text-[16px] leading-[22px] font-poppins">By signing up, you agree to the Terms of
+                <p class="mt-[32px] text-[#5946A9] text-[16px] leading-[22px] font-poppins text-center">By signing up, you agree to the Terms of
                     Service</p>
             </div>
         </div>
     </section>
+    <script>
+        const menuicon = document.querySelector(".menuicon");
+        const menulist = document.querySelector(".menulist");
+        menuicon.addEventListener("click" , ()=>{
+            menulist.classList.toggle("show");
+            menuicon.classList.toggle("show");
+        })
+    </script>
 </body>
 
 </html>
